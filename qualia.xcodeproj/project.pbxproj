@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		4A1C9C1B20684C4C00918C0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1C9C1A20684C4C00918C0A /* AppDelegate.swift */; };
-		4A1C9C1D20684C4C00918C0A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1C9C1C20684C4C00918C0A /* FirstViewController.swift */; };
-		4A1C9C1F20684C4C00918C0A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1C9C1E20684C4C00918C0A /* SecondViewController.swift */; };
+		4A1C9C1D20684C4C00918C0A /* VisionDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1C9C1C20684C4C00918C0A /* VisionDataViewController.swift */; };
 		4A1C9C2220684C4C00918C0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A1C9C2020684C4C00918C0A /* Main.storyboard */; };
 		4A1C9C2420684C4C00918C0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1C9C2320684C4C00918C0A /* Assets.xcassets */; };
 		4A1C9C2720684C4C00918C0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A1C9C2520684C4C00918C0A /* LaunchScreen.storyboard */; };
 		4A1C9C3220684C4D00918C0A /* qualiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1C9C3120684C4D00918C0A /* qualiaTests.swift */; };
 		4A1C9C3D20684C4D00918C0A /* qualiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1C9C3C20684C4D00918C0A /* qualiaUITests.swift */; };
+		4A1C9C4B206850D900918C0A /* FtpServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1C9C4A206850D900918C0A /* FtpServer.swift */; };
+		4A1C9C5F20686AE500918C0A /* RecordButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1C9C5E20686AE500918C0A /* RecordButtonView.swift */; };
+		4A1C9C632068910300918C0A /* VisionDataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1C9C622068910300918C0A /* VisionDataset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +39,7 @@
 /* Begin PBXFileReference section */
 		4A1C9C1720684C4C00918C0A /* qualia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qualia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1C9C1A20684C4C00918C0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A1C9C1C20684C4C00918C0A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		4A1C9C1E20684C4C00918C0A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		4A1C9C1C20684C4C00918C0A /* VisionDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionDataViewController.swift; sourceTree = "<group>"; };
 		4A1C9C2120684C4C00918C0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A1C9C2320684C4C00918C0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A1C9C2620684C4C00918C0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		4A1C9C3820684C4D00918C0A /* qualiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qualiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1C9C3C20684C4D00918C0A /* qualiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qualiaUITests.swift; sourceTree = "<group>"; };
 		4A1C9C3E20684C4D00918C0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A1C9C4A206850D900918C0A /* FtpServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FtpServer.swift; sourceTree = "<group>"; };
+		4A1C9C5E20686AE500918C0A /* RecordButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButtonView.swift; sourceTree = "<group>"; };
+		4A1C9C622068910300918C0A /* VisionDataset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionDataset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				4A1C9C1A20684C4C00918C0A /* AppDelegate.swift */,
-				4A1C9C1C20684C4C00918C0A /* FirstViewController.swift */,
-				4A1C9C1E20684C4C00918C0A /* SecondViewController.swift */,
+				4A1C9C1C20684C4C00918C0A /* VisionDataViewController.swift */,
 				4A1C9C2020684C4C00918C0A /* Main.storyboard */,
 				4A1C9C2320684C4C00918C0A /* Assets.xcassets */,
 				4A1C9C2520684C4C00918C0A /* LaunchScreen.storyboard */,
 				4A1C9C2820684C4C00918C0A /* Info.plist */,
+				4A1C9C4A206850D900918C0A /* FtpServer.swift */,
+				4A1C9C5E20686AE500918C0A /* RecordButtonView.swift */,
+				4A1C9C622068910300918C0A /* VisionDataset.swift */,
 			);
 			path = qualia;
 			sourceTree = "<group>";
@@ -262,9 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A1C9C1F20684C4C00918C0A /* SecondViewController.swift in Sources */,
 				4A1C9C1B20684C4C00918C0A /* AppDelegate.swift in Sources */,
-				4A1C9C1D20684C4C00918C0A /* FirstViewController.swift in Sources */,
+				4A1C9C632068910300918C0A /* VisionDataset.swift in Sources */,
+				4A1C9C1D20684C4C00918C0A /* VisionDataViewController.swift in Sources */,
+				4A1C9C4B206850D900918C0A /* FtpServer.swift in Sources */,
+				4A1C9C5F20686AE500918C0A /* RecordButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +442,7 @@
 				DEVELOPMENT_TEAM = 8C2E6QPTC9;
 				INFOPLIST_FILE = qualia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qualia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.protean.qualia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,7 +457,7 @@
 				DEVELOPMENT_TEAM = 8C2E6QPTC9;
 				INFOPLIST_FILE = qualia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qualia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.protean.qualia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

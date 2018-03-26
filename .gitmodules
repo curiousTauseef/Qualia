@@ -1,0 +1,3 @@
+[submodule "rebekka"]
+	path = rebekka
+	url = git@github.com:Constantine-Fry/rebekka.git
