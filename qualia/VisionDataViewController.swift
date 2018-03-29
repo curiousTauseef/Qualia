@@ -62,38 +62,35 @@ class VisionDataViewController: UIViewController {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if touches.count > 1 {
-            var i = 0
-            for touch in touches {
-                i += 1
-                cropTouchces!.append(touch)
-                if i >= 2 {
-                    break
-                }
+        var i = 0
+        for touch in touches {
+            if cropTouchces!.count < 2 {
+                cropTouchces?.append(touch)
             }
         }
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        var i = 0
-
         var corners : Array<CGPoint> = [];
         
-        for touch in touches {
-            if cropTouchces!.contains(touch) {
-                corners.append(touch.location(in: self.view))
-                i += 1
-
-                if i == 2 {
-                    break
-                }
-            }
-        }
-
-        let c0 = corners[0]
-        let c1 = corners[1]
+//        for touch in touches {
+//            if cropTouchces!.contains(touch) {
+//                corners.append(touch.location(in: self.view))
+//
+//                if corners.count >= 2 {
+//                    break
+//                }
+//            }
+//        }
+//
+//        if cropTouchces!.count < 2 { return }
+        
+        let c0 = cropTouchces![0].location(in: view)
+        let c1 = cropTouchces![1].location(in: view)
         
         cropRegion = CGRect(x: c0.x, y: c0.y, width: c1.x - c0.x, height: c1.y - c0.y)
+        
+        print(cropRegion)
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
